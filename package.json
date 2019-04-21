@@ -1,0 +1,24 @@
+{
+  "name": "mern-shopping-list",
+  "version": "1.0.0",
+  "description": "Shopping list build with MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && yarn start",
+    "client-install": "yarn install --prefix client",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "author": "Kent Ferolino",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
+}
